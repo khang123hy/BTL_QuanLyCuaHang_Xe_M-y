@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{406E8426-3816-42BB-99B2-4D74EBD52287}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cửa_hàng_xe_máy</RootNamespace>
+    <AssemblyName>Cửa hàng xe máy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bc\RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bc\RJTextBox.Designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrQLxE.cs">
+      <DependentUpon>CrQLxE.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrQLNCC.cs">
+      <DependentUpon>CrQLNCC.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrQLKH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrQLKH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="In ra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In ra.Designer.cs">
+      <DependentUpon>In ra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loại Xe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loại Xe.Designer.cs">
+      <DependentUpon>Loại Xe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quản Lý Khách Hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quản Lý Khách Hàng.Designer.cs">
+      <DependentUpon>Quản Lý Khách Hàng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quản Lý Nhà Cung Cấp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quản Lý Nhà Cung Cấp.Designer.cs">
+      <DependentUpon>Quản Lý Nhà Cung Cấp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quản Lý Nhân Viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quản Lý Nhân Viên.Designer.cs">
+      <DependentUpon>Quản Lý Nhân Viên.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quản Lý Xe Máy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quản Lý Xe Máy.Designer.cs">
+      <DependentUpon>Quản Lý Xe Máy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thông tin ứng dụng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thông tin ứng dụng.Designer.cs">
+      <DependentUpon>Thông tin ứng dụng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê ncc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê ncc.Designer.cs">
+      <DependentUpon>Thống kê ncc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống kê QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống kê QLKH.Designer.cs">
+      <DependentUpon>Thống kê QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống Kê Xe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống Kê Xe.Designer.cs">
+      <DependentUpon>Thống Kê Xe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trang Chủ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trang Chủ.Designer.cs">
+      <DependentUpon>Trang Chủ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tìm Kiếm KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tìm Kiếm KH.Designer.cs">
+      <DependentUpon>Tìm Kiếm KH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tìm Kiếm Nhà Cung Cấp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tìm Kiếm Nhà Cung Cấp.Designer.cs">
+      <DependentUpon>Tìm Kiếm Nhà Cung Cấp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TÌm Kiếm Xe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TÌm Kiếm Xe.Designer.cs">
+      <DependentUpon>TÌm Kiếm Xe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tổng đài.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tổng đài.Designer.cs">
+      <DependentUpon>Tổng đài.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ĐăngNhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ĐăngNhập.Designer.cs">
+      <DependentUpon>ĐăngNhập.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Đổi mật khẩu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Đổi mật khẩu.Designer.cs">
+      <DependentUpon>Đổi mật khẩu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bc\RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrQLxE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrQLxE.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrQLNCC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrQLNCC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrQLKH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrQLKH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In ra.resx">
+      <DependentUpon>In ra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loại Xe.resx">
+      <DependentUpon>Loại Xe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quản Lý Khách Hàng.resx">
+      <DependentUpon>Quản Lý Khách Hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quản Lý Nhà Cung Cấp.resx">
+      <DependentUpon>Quản Lý Nhà Cung Cấp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quản Lý Nhân Viên.resx">
+      <DependentUpon>Quản Lý Nhân Viên.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quản Lý Xe Máy.resx">
+      <DependentUpon>Quản Lý Xe Máy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thông tin ứng dụng.resx">
+      <DependentUpon>Thông tin ứng dụng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê ncc.resx">
+      <DependentUpon>Thống kê ncc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống kê QLKH.resx">
+      <DependentUpon>Thống kê QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống Kê Xe.resx">
+      <DependentUpon>Thống Kê Xe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trang Chủ.resx">
+      <DependentUpon>Trang Chủ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tìm Kiếm KH.resx">
+      <DependentUpon>Tìm Kiếm KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tìm Kiếm Nhà Cung Cấp.resx">
+      <DependentUpon>Tìm Kiếm Nhà Cung Cấp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TÌm Kiếm Xe.resx">
+      <DependentUpon>TÌm Kiếm Xe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tổng đài.resx">
+      <DependentUpon>Tổng đài.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ĐăngNhập.resx">
+      <DependentUpon>ĐăngNhập.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Đổi mật khẩu.resx">
+      <DependentUpon>Đổi mật khẩu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ảnh chụp màn hình 2022-09-23 101624.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_480px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Plus_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Plus_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_advanced_search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_pane_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-09-29 210221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh_16px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_reset_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_reset_50px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_reset_50px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_font_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_font_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_inbox_settings_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_pane_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_font_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_inbox_settings_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_pane_30px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_reset_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motorcycle_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motorcycle_70px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motocross_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motocross_1000px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motorcycle_1000px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motorcycle_1000px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_motorbike_helmet_1000px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0af3c9613761d2d2394d99312aeba397.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_lease_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_lease_20px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_supplier_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_warehouse_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_categorize_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_client_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Search_Contacts_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_analytics_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_switchboard_20px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_contact_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_password_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Logout_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 104055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 1040551.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 104537.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 104832.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 104937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_NFT_User_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_test_account_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 1040552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_test_account_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_NFT_User_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Password_Key_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Password_Key_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Close_40px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_window_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-11-04 1040553.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_test_account_50px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Password_Key_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_NFT_User_100px2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
