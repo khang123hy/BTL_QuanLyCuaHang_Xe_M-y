@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bc\RJTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="bc\RJTextBox.Designer.cs">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="CrQLxE.cs">
       <DependentUpon>CrQLxE.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -180,9 +174,6 @@
     <Compile Include="Đổi mật khẩu.Designer.cs">
       <DependentUpon>Đổi mật khẩu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="bc\RJTextBox.resx">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CrQLxE.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrQLxE.cs</LastGenOutput>

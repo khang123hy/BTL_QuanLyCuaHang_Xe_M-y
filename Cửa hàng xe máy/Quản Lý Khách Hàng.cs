@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Text.RegularExpressions;
 
 
 namespace Cửa_hàng_xe_máy
@@ -29,7 +21,7 @@ namespace Cửa_hàng_xe_máy
 
 
         }
-      
+
         public Quản_Lý_Khách_Hàng()
         {
             InitializeComponent();
@@ -167,7 +159,7 @@ namespace Cửa_hàng_xe_máy
 
         }
 
-      
+
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -199,7 +191,7 @@ namespace Cửa_hàng_xe_máy
             //chuyển dữ liệu lên các textbox tương ứng
             txtMaKH.Text = dgvQLKH[0, i].Value.ToString();//truy vấn đến ô dữ liệu
             cbbMaLoai.Text = dgvQLKH[1, i].Value.ToString();
-            txtTenKH.Texts = dgvQLKH[2, i].Value.ToString();
+            txtTenKH.Text = dgvQLKH[2, i].Value.ToString();
             txtSDT.Text = dgvQLKH[3, i].Value.ToString();
             txtNgaySinh.Text = dgvQLKH[4, i].Value.ToString();
             txtGioiTinh.Text = dgvQLKH[5, i].Value.ToString();
@@ -233,7 +225,7 @@ namespace Cửa_hàng_xe_máy
         private void btnSua_Click(object sender, EventArgs e)
         {
             string maKH = txtMaKH.Text;
-            string tenKH = txtTenKH.Texts;
+            string tenKH = txtTenKH.Text;
             string maloai = cbbMaLoai.SelectedValue.ToString();
             string diachi = txtDiaChi.Text;
             string sdt = txtSDT.Text;

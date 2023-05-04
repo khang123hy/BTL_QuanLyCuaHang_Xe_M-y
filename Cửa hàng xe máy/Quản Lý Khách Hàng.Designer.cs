@@ -62,7 +62,7 @@
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtTenKH = new Cửa_hàng_xe_máy.bc.RJTextBox();
+            this.txtTenKH = new System.Windows.Forms.TextBox();
             this.grbNhapTT.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -505,25 +505,13 @@
             // 
             // txtTenKH
             // 
-            this.txtTenKH.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTenKH.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtTenKH.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtTenKH.BorderRadius = 6;
-            this.txtTenKH.BorderSize = 2;
-            this.txtTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.txtTenKH.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtTenKH.Location = new System.Drawing.Point(135, 41);
+            this.txtTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(229)))), ((int)(((byte)(232)))));
+            this.txtTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKH.Location = new System.Drawing.Point(135, 38);
             this.txtTenKH.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenKH.Multiline = false;
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtTenKH.PasswordChar = false;
-            this.txtTenKH.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTenKH.PlaceholderText = "";
-            this.txtTenKH.Size = new System.Drawing.Size(250, 35);
+            this.txtTenKH.Size = new System.Drawing.Size(257, 34);
             this.txtTenKH.TabIndex = 25;
-            this.txtTenKH.Texts = "";
-            this.txtTenKH.UnderlinedStyle = false;
             // 
             // Quản_Lý_Khách_Hàng
             // 
@@ -594,6 +582,6 @@
         private System.Windows.Forms.MaskedTextBox txtSDT;
         private System.Windows.Forms.MaskedTextBox txtSoCCCD;
         private System.Windows.Forms.ComboBox txtGioiTinh;
-        private bc.RJTextBox txtTenKH;
+        private System.Windows.Forms.TextBox txtTenKH;
     }
 }

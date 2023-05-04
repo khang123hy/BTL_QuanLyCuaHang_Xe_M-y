@@ -93,4 +93,3 @@ C:\Users\duykh\Desktop\Cửa hàng xe máy\Cửa hàng xe máy\obj\Debug\Cửa_h
 C:\Users\duykh\Desktop\Cửa hàng xe máy\Cửa hàng xe máy\obj\Debug\Cửa_hàng_xe_máy.Đổi_mật_khẩu.resources
 C:\Users\duykh\Desktop\Cửa hàng xe máy\Cửa hàng xe máy\obj\Debug\Cửa_hàng_xe_máy.Tổng_đài.resources
 C:\Users\duykh\Desktop\Cửa hàng xe máy\Cửa hàng xe máy\obj\Debug\Cửa_hàng_xe_máy.Thông_tin_ứng_dụng.resources
-C:\Users\duykh\Desktop\Cửa hàng xe máy\Cửa hàng xe máy\obj\Debug\Cửa_hàng_xe_máy.bc.RJTextBox.resources

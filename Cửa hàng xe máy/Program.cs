@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cửa_hàng_xe_máy
@@ -17,7 +14,7 @@ namespace Cửa_hàng_xe_máy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Thống_Kê_Xe());
+            Application.Run(new Đăng_Nhập());
         }
     }
 }
